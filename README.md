@@ -31,3 +31,5 @@ npm run build --report
 1. 页面跳转：由 JS 渲染
 2. 优点：页面切换快速
 3. 首屏渲染时间慢、SEO差
+
+## 模拟：[去哪儿部分页面](http://touch.piao.qunar.com/)

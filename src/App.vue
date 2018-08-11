@@ -11,9 +11,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-body{
-    #app{
-        color:red;
-    }
-}
+
 </style>
