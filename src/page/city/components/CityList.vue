@@ -4,21 +4,21 @@
       <div class="cityWarp">
         <h2 class="title border-bottom">当前城市</h2>
         <ul class="city border-bottom">
-          <li><span>上海</span></li>
+          <li><span>{{this.$store.state.currentCity}}</span></li>
         </ul>
       </div>
 
       <div class="cityWarp">
         <h2 class="title border-bottom">热门城市</h2>
         <ul class="city  border-bottom">
-          <li v-for="item of hotCities" :key="item.id" :spell="item.spell"><span>{{ item.name }}</span></li>
+          <li v-for="item of hotCities" @click="selectCity(item.name)" :key="item.id" :spell="item.spell"><span>{{ item.name }}</span></li>
         </ul>
       </div>
 
       <div class="cityIndexList" v-for="(value, key) of cities" :key="key">
         <h2 class="title border-bottom" :ref="key"> {{key}}</h2>
         <ul class="city">
-          <li class="border-bottom" v-for="item of value" :spell="item.spell" :key="item.id">{{item.name}}</li>
+          <li class="border-bottom" @click="selectCity(item.name)" v-for="item of value" :spell="item.spell" :key="item.id">{{item.name}}</li>
         </ul>
       </div>
     </div>
@@ -56,6 +56,12 @@ export default {
   },
   mounted () {
     this.scroll = new BScroll(this.$refs.wrapper)
+  },
+  methods: {
+    selectCity (cityName) {
+      this.$store.commit('changeCity', {cityName: cityName})
+      this.$router.push('/')
+    }
   }
 }
 </script>

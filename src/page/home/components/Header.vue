@@ -12,7 +12,7 @@
             <input type="text" placeholder="输入城市/景点/游玩主题" />
         </div>
         <router-link to="/city" class="city">
-            <span> 上海</span>
+            <span>{{this.$store.state.currentCity}}</span>
             <svg class="icon"  aria-hidden="true">
                 <use xlink:href="#i-down"></use>
             </svg>

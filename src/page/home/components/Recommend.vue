@@ -59,7 +59,8 @@ export default {
         }
         .desc{
           @include ellipsis;
-          font-size: px(14);
+          font-size: px(12);
+          color: #999;
         }
         .button{
           background: $bgColor;

@@ -59,6 +59,7 @@ export default {
         }
         span{
           font-size: px(12);
+          color: #999;
         }
       }
     }
