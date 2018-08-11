@@ -15,6 +15,7 @@
 </template>
 <script>
 export default {
+  name: 'HomeRecommend',
   props: {
     list: {
       type: Array

@@ -20,7 +20,9 @@
     </div>
 </template>
 <script>
-export default {}
+export default {
+  name: 'HomeHeader'
+}
 </script>
 <style lang="scss">
 @import "~style/varibles.scss";
