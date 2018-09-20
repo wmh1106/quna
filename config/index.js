@@ -56,8 +56,8 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
-    // assetsPublicPath: '/quna/dist/',// github 上的路径
+    // assetsPublicPath: '/',
+    assetsPublicPath: '/quna/dist/',// github 上的路径
 
     /**
      * Source Maps
