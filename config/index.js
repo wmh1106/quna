@@ -11,7 +11,8 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target: 'http://localhost:8080',
+        // target: 'http://localhost:8080',
+        target: 'https://wmh1106.github.io',
         pathRewrite: {
           '^/api': '/static/mock'
         }
