@@ -8,7 +8,8 @@ module.exports = {
   dev: {
     // Paths
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    // assetsPublicPath: '/',
+    assetsPublicPath: '/wmh1106/quna/tree/master/dist/',
     proxyTable: {
       '/api': {
         // target: 'http://localhost:8080',
