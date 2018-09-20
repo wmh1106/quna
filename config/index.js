@@ -8,12 +8,10 @@ module.exports = {
   dev: {
     // Paths
     assetsSubDirectory: 'static',
-    // assetsPublicPath: '/',
-    assetsPublicPath: '/wmh1106/quna/tree/master/dist/',
+    assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        // target: 'http://localhost:8080',
-        target: 'https://wmh1106.github.io',
+        target: 'http://localhost:8080',
         pathRewrite: {
           '^/api': '/static/mock'
         }
@@ -58,7 +56,8 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    // assetsPublicPath: '/',
+    assetsPublicPath: '/quna/dist/',// github 上的路径
 
     /**
      * Source Maps
