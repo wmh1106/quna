@@ -33,7 +33,7 @@ export default {
   },
   methods: {
     getCityList () {
-      axios.get('/api/city.json')
+      axios.get('/quna/dist/api/city.json')
         .then(res => (this.getUseData(res)))
     },
     getUseData (res) {

@@ -37,7 +37,7 @@ export default {
   },
   methods: {
     getHomeInfo () {
-      axios.get('/api/index.json')
+      axios.get('/quna/dist/api/index.json')
         .then(res => (this.getUseData(res)))
     },
     getUseData (res) {

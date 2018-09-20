@@ -10,10 +10,10 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/api': {
+      '/quna/dist/api': {
         target: 'http://localhost:8080',
         pathRewrite: {
-          '^/api': '/static/mock'
+          '^/quna/dist/api': '/static/mock'
         }
       }
     },
