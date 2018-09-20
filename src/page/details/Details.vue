@@ -42,7 +42,7 @@ export default {
     }
   },
   mounted () {
-    axios.get('/api/detail.json', {
+    axios.get('/quna/dist/api/detail.json', {
       params: {
         id: this.$route.params.id
       }

@@ -8,8 +8,7 @@ module.exports = {
   dev: {
     // Paths
     assetsSubDirectory: 'static',
-    // assetsPublicPath: '/',
-    assetsPublicPath: '/quna/dist/',
+    assetsPublicPath: '/',
     proxyTable: {
       '/api': {
         target: 'http://localhost:8080',
@@ -57,8 +56,8 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    // assetsPublicPath: '/',
-    assetsPublicPath: '/quna/dist/',// github 上的路径
+    assetsPublicPath: '/',
+    // assetsPublicPath: '/quna/dist/',// github 上的路径
 
     /**
      * Source Maps
