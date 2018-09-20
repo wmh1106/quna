@@ -5,7 +5,7 @@
     </div>
     <div class="searchCityIndexList" v-show="inputValue !== ''" ref="searchCityIndexList">
       <ul class="city" v-show="searchCityList.length">
-        <li class="border-bottom" v-for="item of searchCityList" :spell="item.spell" :key="item.id">{{item.name}}</li>
+        <li class="border-bottom" @click="selectCity(item.name)" v-for="item of searchCityList" :spell="item.spell" :key="item.id">{{item.name}}</li>
       </ul>
       <ul class="city" v-show="!searchCityList.length">
         <li class="border-bottom" style="text-align:center">条件不符，没有数据</li>
@@ -45,6 +45,12 @@ export default {
       }
 
       return list
+    }
+  },
+  methods: {
+    selectCity (cityName) {
+      this.$store.commit('changeCity', {cityName: cityName})
+      this.$router.push('/')
     }
   },
   mounted () {
